@@ -1,16 +1,6 @@
 # Shifted List Search
 
-# Brute force solution:
-# def findLargest(x: List[int]):
-#	max = 0
-#	for i in x:
-#		if i>max:
-#			max = i
-#	return max
-#
-# Problem with brute force: runtime is O(n)
-
-
+# returns the largest element in a shifted list
 def findLargest(x, low, high):
 
 	# Edge case: empty list
@@ -21,6 +11,10 @@ def findLargest(x, low, high):
 	lo = low
 	hi = high
 	mid = (hi + lo)//2
+
+	# if there are duplicate elements
+	if len(x) != len(set(x)):
+		return findLargest_iterative(x)
 	
 	# if x[lo] < x[hi], then the array was not rotated
 	if x[lo] < x[hi]:
@@ -44,3 +38,9 @@ def findLargest(x, low, high):
 		return findLargest(x, lo, mid)
  
 
+def findLargest_iterative(x):
+	max = 0
+	for i in x:
+		if i>max:
+			max = i
+	return max
