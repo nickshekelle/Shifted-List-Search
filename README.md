@@ -21,7 +21,8 @@ def findLargest(x):
  There is one problem with my solution however. In the case of a list that does not have distinct elements, meaning that there are repeated 
  elements in the list, my binary search may fail to return the maximum value. In the case of nondistinct lists, the best possible runtime 
  for finding the maximum seems to be O(n). I have implemented a way to catch if there are nondistinct values, and if there are, I run the 
- brute force solution. 
+ brute force solution.
+ 
 
 - Can you identify any edge cases that we need to account for?
 
