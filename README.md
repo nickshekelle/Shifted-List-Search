@@ -24,11 +24,14 @@ def findLargest(x):
  brute force solution. 
 
 - Can you identify any edge cases that we need to account for?
+
 I accounted for the edge case of an empty list in my code. My function should have no problem running efficiently on massive lists.
 
 - Can you explain the orders of growth implications of the algorithm you implemented?
+
 My function uses binary search. For all distinct inputs of length n, it will return the largest element with O(logn) time complexity.
 For non-distinct inputs of length n, it will return the largest element with O(n) time complexity.
 
 - Suppose our initial list contains 1 million elements, is there a more performant way we can find the answer?
+
 My function is as optimal as you can get for the specified problem. It will run very quickly if all the elements in the list are distinct and not nearly as quickly if they are not distinct. 
