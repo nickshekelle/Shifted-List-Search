@@ -43,7 +43,6 @@ def findLargest(x, low, high):
  
 
 def findLargest_iterative(x):
-    print("Iterative!")
     max = 0
     for i in x:
         if i>max:
@@ -69,8 +68,6 @@ def findLargest_iterative(x):
 #  j = j + z
 
 #  if k == findLargest(j, 0, len(j)-1):
-#    if iterative == True:
-#      print("Used iterative method")
 #    print("Sucess!")
 #  else:
 #    print("FAILED")
