@@ -15,10 +15,6 @@ def findLargest(x, low, high):
     lo = low
     hi = high
     mid = (hi + lo)//2
-
-    # if there are duplicate elements
-    if x[lo] == x[lo+1] or x[hi] == x[hi-1] or x[lo] == x[hi] or x[mid] == x[mid-1] or x[mid] == x[mid+1]:
-        return findLargest_iterative(x)
     
     # if x[lo] < x[hi], then the array was not rotated
     if x[lo] < x[hi]:
@@ -27,6 +23,10 @@ def findLargest(x, low, high):
     # if there is only one element
     if hi == lo:
         return x[lo]
+    
+    # if there are duplicate elements
+    if x[lo] == x[lo+1] or x[hi] == x[hi-1] or x[lo] == x[hi] or x[mid] == x[mid-1] or x[mid] == x[mid+1]:
+        return findLargest_iterative(x)
 
     # if x[mid] > x[hi], we know the biggest element is between mid and hi
     if x[mid] > x[hi]:
