@@ -10,7 +10,7 @@ def findLargest(x, low, high):
     # Edge case: empty list
     if not x:
         print("List is Empty")
-        return -1
+        return
 
     lo = low
     hi = high
