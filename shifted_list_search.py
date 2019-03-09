@@ -42,6 +42,7 @@ def findLargest(x, low, high):
         return findLargest(x, lo, mid)
  
 
+# The iterative solution, only run if duplicates are in the list
 def findLargest_iterative(x):
     max = 0
     for i in x:
