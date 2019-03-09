@@ -27,7 +27,7 @@ def findLargest(x):
 
 - Can you identify any edge cases that we need to account for?
 
-I accounted for the edge case of an empty list in my code. My function should have no problem running efficiently on massive lists.
+I accounted for the edge case of an empty list and a single element list in my code. My function should have no problem running efficiently on massive lists. For the case of a list of only duplicates, my code will simply return the duplicate.
 
 - Can you explain the orders of growth implications of the algorithm you implemented?
 
