@@ -36,4 +36,4 @@ For non-distinct inputs of length n, it will return the largest element with O(n
 
 - Suppose our initial list contains 1 million elements, is there a more performant way we can find the answer?
 
-My function is as optimal as you can get for the specified problem. It will run very quickly if all the elements in the list are distinct and not nearly as quick if they are not distinct. 
+I think my function is as optimal as you can get for the specified problem. It will run very quickly if all the elements in the list are distinct and not nearly as quick if they are not distinct. 
